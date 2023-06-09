@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .btn {
+        color: white;
+        /* width: 75px;
+        height: 40px; */
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: cadetblue;
+        /* font-size: 14px; */
+        transition: 1s;
+        transform: scale(1.05);
+    }
+
+    .submit {
+        background-color: blue;
+    }
+
+    .clear {
+        background-color: red;
+    }
+
+    form {
+        padding: 40px;
+        border: 1px solid black;
+        border-radius: 10px;
+        /* width: 30%; */
+        /* min-width: 200px; */
+        max-width: 300px;
+        text-align: center;
+        /* margin: 10px 50px; */
+        margin: auto;
+    }
+</style>
+
+<body>
+
+
+    <form action="">
+
+        <div>
+            <label for="name">Name</label> <br>
+            <input type="text" name="name" id="name" placeholder="Your name">
+        </div>
+        <div>
+            <label for="surname">SurName</label> <br>
+            <input type="text" name="surname" id="surname" placeholder="Your Surname">
+        </div>
+        <div>
+            <label for="email">Email</label> <br>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="password">Password</label> <br>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="age">Age</label> <br>
+            <input type="number" name="age" id="age">
+        </div>
+        <div>
+            <label for="date">Date</label> <br>
+            <input type="date" name="date" id="date">
+        </div>
+        <div>
+            <label for="female">Gender</label><br>
+            <input type="radio" name="gender" id="male" value="MALE">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="FEMALE">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="OTHER">
+            <label for="other">Other</label>
+        </div>
+        <div>
+
+            <label for="">Hobies</label> <br>
+
+            <input type="checkbox" name="art" id="art"> <label> Art </label>
+            <input type="checkbox" name="sport" id="sport"> <label> Sport</label>
+            <input type="checkbox" name="music" id="music"> <label> Music</label>
+
+        </div>
+        <div>
+            <label for="">City</label><br>
+
+            <select name="city" id="city">
+                <option value="ANKARA">Ankara</option>
+                <option value="İSTANBUL">Istanbul</option>
+                <option value="ANTALYA" selected>Antalya</option>
+                <option value="İZMİR">İzmir</option>
+            </select>
+
+
+
+
+
+        </div>
+
+        <div style="margin-top: 10px;">
+            <textarea style="resize: none;" name="messagebox" id="textbox" cols="30" rows="10"
+                placeholder="Your message"></textarea>
+        </div>
+
+        <div class="button-group">
+            <input class="btn submit" type="submit" value="Gönder">
+            <input class="btn clear" type="reset" value="Temizle">
+        </div>
+
+
+
+    </form>
+
+
+
+</body>
+
+</html>
