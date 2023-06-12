@@ -1,0 +1,57 @@
+* {
+    text-align: center;
+}
+
+td,
+th {
+    border: 1px solid black;
+    padding: 15px;
+    color: brown;
+    width: 150px;
+}
+
+td {
+    padding: 17px;
+}
+
+td:hover {
+    background-color: antiquewhite;
+}
+
+
+
+button {
+    border-radius: 25px;
+    background-color: dodgerblue;
+    cursor: pointer;
+    color: aliceblue;
+    padding: 15px 30px;
+
+}
+
+button:hover {
+    background-color: turquoise;
+    font-style: italic;
+
+}
+
+button:active {
+    background-color: bisque;
+    color: brown;
+    transform: translateY(6px);
+
+
+}
+
+th {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+th:hover {
+    color: blue;
+    transition: 800ms;
+    transform: scale(0.9);
+}
