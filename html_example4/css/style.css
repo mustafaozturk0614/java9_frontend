@@ -1,0 +1,148 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    transition: 0.4s;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: lightblue;
+    align-items: center;
+    padding: 0px 18%;
+    height: 15%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+}
+
+header ul li a {
+    border-bottom: 1px solid transparent;
+
+}
+
+header ul li a:hover {
+    color: blueviolet;
+    /* text-decoration: underline;
+    text-underline-offset: 15px; */
+    border-color: blueviolet;
+    padding-bottom: 10px;
+    */
+    /* text-decoration: underline;
+}
+
+section {
+    padding: 60px 8%;
+
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background: url("/img/travel-01.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+    display: flex;
+
+}
+
+.home-text {
+
+    margin-top: 55px;
+    margin-left: 10px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+.home-text h1 {
+
+    color: whitesmoke;
+    font-size: 80px;
+    line-height: 1.2;
+    letter-spacing: 4px;
+    font-family: 'Paytone One', sans-serif;
+    margin-bottom: 20px;
+
+}
+
+.home-text p {
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: 4px;
+    font-family: 'Paytone One', sans-serif;
+    margin-bottom: 40px;
+
+}
+
+.btn {
+
+    width: 120px;
+    background-color: #ffffffbf;
+    border-radius: 14px;
+    font-size: 16px;
+    padding: 15px 35px;
+    color: blueviolet;
+
+}
+
+.btn:hover {
+
+    background-color: white;
+    transform: scale(1.1);
+
+}
+
+.about {}
+
+.resimler {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+
+}
+
+.card {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 15px;
+    gap: 15px;
+    border-radius: 25px;
+    box-shadow: 5px 3px 5px 3px;
+}
+
+img {
+    width: 100%;
+    height: 200px;
+
+}
