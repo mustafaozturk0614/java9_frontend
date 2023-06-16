@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center">Home Page</h1>
+    <div class="d-flex flex-column align-items-center gap-3">
+
+        <div>
+            <input type="number" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button id="filterButton" type="button" class="btn btn-primary mx-2" onclick="filter()">Filtrele</button>
+            <button id="clearButton" type="button" class="btn btn-info" onclick="clearUl()">Temizle</button>
+        </div>
+
+        <ul id="expanses_ul">
+
+        </ul>
+
+    </div>
+    <div class="container">
+
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" name="name" class="form-control" id="name">
+
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Surname</label>
+                <input type="text" name="surname" class="form-control" id="surname">
+
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Username</label>
+                <input type="text" name="username" class="form-control" id="username">
+
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Age</label>
+                <input type="text" name="age" class="form-control" id="age">
+
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password">
+            </div>
+
+            <button type="button" id="submitBtn" onclick="addUser()" class="btn btn-primary">Submit</button>
+            <button type="button" id="removeBtn" onclick="clearTable()" class="btn btn-danger">Clear</button>
+        </form>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Surname</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Password</th>
+                </tr>
+            </thead>
+            <tbody id="tablebody">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>50</td>
+                    <td>123</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="home.js"></script>
+</body>
+
+</html>

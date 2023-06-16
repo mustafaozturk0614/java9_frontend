@@ -50,8 +50,8 @@ header ul li a:hover {
     text-underline-offset: 15px; */
     border-color: blueviolet;
     padding-bottom: 10px;
-    */
-    /* text-decoration: underline;
+
+
 }
 
 section {
@@ -65,7 +65,7 @@ section {
     background: url("/img/travel-01.jpg");
     background-size: cover;
     background-position: center;
-    border: 1px solid black;
+
     display: flex;
 
 }
@@ -145,4 +145,77 @@ img {
     width: 100%;
     height: 200px;
 
+}
+
+.hamburgerMenu {
+    display: none;
+}
+
+.dropdownmenu {
+    display: none;
+
+}
+
+.dropdown:hover .dropdownmenu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: aliceblue;
+}
+
+.button {
+
+    border-radius: 20px;
+    padding: 15px 35px;
+
+
+}
+
+.text-dark {
+    color: black !important;
+}
+
+.button-primary {
+
+    background-color: green;
+    color: aliceblue;
+}
+
+.button-secondary {
+
+    background-color: gray;
+    color: bisque;
+}
+
+.button-warning {
+
+    background-color: red;
+    color: yellow;
+}
+
+
+
+
+@media screen and (max-width:778px) {
+
+    .hamburgerMenu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar li {
+        display: none;
+    }
+
+    i:hover {
+        font-size: 50px;
+
+    }
+
+    i:hover .navbar li {
+        display: flex;
+        background-color: blueviolet;
+
+    }
 }
