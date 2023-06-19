@@ -89,10 +89,14 @@ function clearTable() {
   sayi = 0;
 }
 
-let myinterval = setInterval(() => {
-  sayi++;
-  console.log(sayi);
-  //   if (sayi == 10) {
-  //     clearInterval(myinterval);
-  //   }
-}, 100);
+// let myinterval = setInterval(() => {
+//   sayi++;
+//   console.log(sayi);
+//   //   if (sayi == 10) {
+//   //     clearInterval(myinterval);
+//   //   }
+// }, 100);
+
+let h3 = document.querySelector("h3");
+
+h3.innerText += ` ${localStorage.getItem("username")} `;
