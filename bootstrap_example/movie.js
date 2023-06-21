@@ -35,7 +35,7 @@ getDataApi2();
 
 let allfilm = document.getElementById("allfilm");
 
-async function addAllMovie() {
+ function addAllMovie() {
   allfilm.innerHTML = "";
 
   console.log(filmler);
